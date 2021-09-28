@@ -9,7 +9,7 @@ class Window(tk.Tk):
 
         titleFrame = tk.Frame(self)
         borderFrame = tk.Frame(titleFrame, borderwidth=3, relief=tk.GROOVE)
-        tk.Label(borderFrame, text="全省空氣品質指標_AQI", font=("Courier", 20, "italic")).pack()
+        tk.Label(borderFrame, text="全國空氣品質指標_AQI", font=("Courier", 20, "italic")).pack()
         publishTimeLabel = tk.Label(borderFrame, text="發佈時間:" + countyList[1].publishTime)
         publishTimeLabel.pack()
         tk.Button(borderFrame, text="更新", padx=10, pady=10, command=self.userClickUpdate).pack(pady=(20, 0),anchor=tk.E)
